@@ -1,0 +1,171 @@
+:root{
+--yanga-primary:#5a3cff;
+--yanga-dark:#0f172a;
+--yanga-light:#f7f8ff;
+--yanga-text:#333;
+--yanga-border:#eaeaea;
+}
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+color:var(--yanga-text);
+background:white;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10%;
+border-bottom:1px solid var(--yanga-border);
+background:white;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo a{
+font-weight:700;
+font-size:20px;
+text-decoration:none;
+color:var(--yanga-dark);
+}
+
+.navbar nav a{
+margin:0 12px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.navbar nav a.active{
+color:var(--yanga-primary);
+}
+
+.cart-btn{
+background:var(--yanga-primary);
+color:white;
+padding:8px 14px;
+border-radius:6px;
+text-decoration:none;
+}
+
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:100px 10%;
+background:var(--yanga-light);
+gap:60px;
+flex-wrap:wrap;
+}
+
+.hero-left{
+max-width:500px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#666;
+margin-bottom:30px;
+}
+
+.hero-right{
+display:flex;
+justify-content:center;
+align-items:center;
+flex:1;
+}
+
+.hero-right img{
+width:450px;
+max-width:100%;
+border-radius:24px;
+box-shadow:
+0 10px 30px rgba(0,0,0,0.1),
+0 30px 60px rgba(0,0,0,0.15);
+}
+.hero-right img{
+transition:0.5s;
+}
+
+.hero-right img:hover{
+transform:translateY(-5px);
+}
+
+
+/* BUTTONS */
+
+.btn{
+padding:14px 26px;
+border-radius:8px;
+font-size:16px;
+border:none;
+cursor:pointer;
+margin-right:10px;
+}
+
+.btn-primary{
+background:var(--yanga-primary);
+color:white;
+}
+
+.btn-outline{
+border:2px solid var(--yanga-primary);
+background:white;
+color:var(--yanga-primary);
+}
+
+
+/* CATEGORY GRID */
+
+.categories{
+padding:80px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.category-card{
+background:white;
+border-radius:12px;
+padding:18px;
+box-shadow:0 8px 25px rgba(0,0,0,0.05);
+cursor:pointer;
+transition:0.3s;
+text-align:center;
+}
+
+.category-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+}
+
+.category-card img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.category-card h3{
+margin:10px 0 0;
+font-size:18px;
+}

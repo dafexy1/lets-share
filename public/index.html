@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Let's Share</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+<a href="/">YangaTech</a>
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#" class="active">Let's Share</a>
+<a href="#">YangaRide</a>
+<a href="#">Vendors</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+
+</nav>
+
+<div class="nav-right">
+
+<a href="/views/cart.html" class="cart-btn">
+🛒 <span id="cart-count">0</span>
+</a>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-left">
+
+<h1>Buy Together.<br>Pay Less.</h1>
+
+<p>
+Group purchases that unlock better prices for everyone.
+</p>
+
+<div class="hero-buttons">
+
+<button class="btn btn-primary" onclick="startSharing()">
+Start Sharing
+</button>
+
+<button class="btn btn-outline" onclick="becomeVendor()">
+Become a Vendor
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="/images/group-buying.jpeg" alt="Group buying illustration">
+
+</div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="categories">
+
+<div class="category-card" onclick="openCategory('groceries')">
+<img src="/images/groceries.jpg" alt="Groceries">
+<h3>Groceries</h3>
+</div>
+
+<div class="category-card" onclick="openCategory('foodstuff')">
+<img src="/images/foodstuff.jpg" alt="Foodstuff">
+<h3>Foodstuff</h3>
+</div>
+
+<div class="category-card" onclick="openCategory('apparel')">
+<img src="/images/apparel.jpg" alt="Apparel">
+<h3>Apparel</h3>
+</div>
+
+<div class="category-card" onclick="openCategory('joy')">
+<img src="/images/joy.jpg" alt="Joy Lifestyle">
+<h3>Joy</h3>
+</div>
+
+<div class="category-card" onclick="openCategory('cargo')">
+<img src="/images/cargo.jpg" alt="Cargo">
+<h3>Cargo</h3>
+</div>
+
+<div class="category-card" onclick="openCategory('ideas')">
+<img src="/images/ideas.jpg" alt="Ideas">
+<h3>Ideas</h3>
+</div>
+
+<div class="category-card" onclick="openCategory('meals')">
+<img src="/images/meals.jpg" alt="Meals">
+<h3>Meals</h3>
+</div>
+
+<div class="category-card" onclick="openCategory('building')">
+<img src="/images/building.jpg" alt="Building Materials">
+<h3>Building Materials</h3>
+</div>
+
+</section>
+
+<script src="/js/app.js"></script>
+
+</body>
+</html>
