@@ -1,9 +1,11 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-function updateCartCount(){
+function addToCart(productId){
 
-document.getElementById("cart-count").innerText = cart.length;
+cart.push(productId);
+
+localStorage.setItem("cart", JSON.stringify(cart));
+
+alert("Added to cart");
 
 }
-
-updateCartCount();

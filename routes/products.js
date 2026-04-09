@@ -1,8 +1,17 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.json({ message: "Products route working" });
+const Product = require("../models/Product");
+
+
+router.get("/:category", async (req,res)=>{
+
+const products = await Product.find({
+category: req.params.category
+});
+
+res.json(products);
+
 });
 
 module.exports = router;
